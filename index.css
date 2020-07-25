@@ -17,7 +17,7 @@
 .header__title {
   color: chocolate;
   font-size: 20px;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .main {
@@ -25,8 +25,8 @@
   background-color: silver;
 }
 
-.taks-list {
-
+.task-list {
+  padding: 5px;
 }
 .task {
   display: flex;
@@ -35,7 +35,7 @@
   justify-content: space-between;
   background-color: aliceblue;
   padding: 10px;
-  margin: 2px 0px;
+  margin: 2px 0;
 }
 .task__text {
   max-width: 75vw;
@@ -51,9 +51,53 @@
   max-width: 50px;
 }
 .task__delete {
-  color: red !important;
+  cursor: pointer;
+  color: red;
 }
 .task__delete:hover, .task__delete:active {
+  transform: scale(1.5,1.5);
+  transition: 0.3s ease-in-out;
+}
+
+.add-task {
+  min-height: 75px;
+  background-color: aliceblue;
+  padding: 0 10px;
+  margin: 0 2px;
+}
+.add-task__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.add-task__title {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 0 5px;
+}
+.add-task__input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+.add-task__input:focus, .add-task__input:active{
+  border: 2px solid forestgreen;
+}
+.add-task__actions {
+
+}
+.add-task__add {
+  font-size: 20px;
+  text-align: center;
+  width: 10vw;
+  cursor: pointer;
+  color: forestgreen;
+}
+.add-task__add:hover, .add-task__add:active {
   transform: scale(1.5,1.5);
   transition: 0.3s ease-in-out;
 }
