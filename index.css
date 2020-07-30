@@ -37,6 +37,13 @@
   padding: 10px;
   margin: 2px 0;
 }
+.task--checked {
+  background-color: silver;
+}
+.task--checked p {
+  color: grey;
+  text-decoration: line-through;
+}
 .task__text {
   max-width: 75vw;
   text-overflow: ellipsis;
